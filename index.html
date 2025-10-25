@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres Creativos - Cursos Disponibles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar Simplificado -->
+    <nav class="navbar navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">Actividades extraescolares</a>
+            <div class="logos-escuela">
+                <!-- Agregar logos de la escuela -->
+                <img src="Imagenes/logo1.png" alt="Logo principal" class="logo-escuela me-2">
+                <img src="Imagenes/logo2.png" alt="Logo secundario" class="logo-escuela">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="hero-title">Descubre tu próxima pasión</h1>
+                    <p class="hero-subtitle">Explora nuestra variedad de talleres y desarrolla nuevas habilidades para tu desarrollo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talleres -->
+    <section class="talleres-section">
+        <div class="container">
+            <h2 class="section-title text-center">Talleres Disponibles</h2>
+            <p class="text-center text-muted mb-5">Selecciona el horario que prefieras para inscribirte</p>
+            
+            <div class="row">
+                <!-- Taller 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="taller-card">
+                        <div class="card-header-custom">
+                            <span class="taller-categoria">Arte</span>
+                            <h3 class="taller-titulo">Pintura</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="taller-descripcion">Explorarás materiales, mezclas y estilos de pintura.</p>
+                            <div class="taller-instructor mb-3">
+                                <strong>Instructor:</strong>
+                            </div>
+                            
+                            <!-- Horarios -->
+                            <div class="horarios-container">
+                                <h6 class="mb-3 text-azul-principal">Selecciona tu horario:</h6>
+                                
+                                <!-- Turno Mañana -->
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pintura-horario" id="pintura-manana">
+                                        <label class="form-check-label w-100" for="pintura-manana">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Mañana</span>
+                                                <span class="horario-hora">9:00 - 12:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">8</span>/12 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Turno Tarde -->
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pintura-horario" id="pintura-tarde">
+                                        <label class="form-check-label w-100" for="pintura-tarde">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Tarde</span>
+                                                <span class="horario-hora">15:00 - 18:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">5</span>/12 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn-inscribirse mt-3 w-100" disabled>Selecciona un horario</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Taller 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="taller-card">
+                        <div class="card-header-custom">
+                            <span class="taller-categoria">Deporte</span>
+                            <h3 class="taller-titulo">Fútbol</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="taller-descripcion">Un espacio para fortalecer el trabajo en equipo, la disciplina y el espíritu deportivo.</p>
+                            <div class="taller-instructor mb-3">
+                                <strong>Instructor:</strong> 
+                            </div>
+                            
+                            <!-- Horarios -->
+                            <div class="horarios-container">
+                                <h6 class="mb-3 text-azul-principal">Selecciona tu horario:</h6>
+                                
+                                <!-- Turno Mañana -->
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="futbol-horario" id="futbol-manana">
+                                        <label class="form-check-label w-100" for="futbol-manana">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Mañana</span>
+                                                <span class="horario-hora">8:00 - 10:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">10</span>/15 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Turno Tarde -->
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="futbol-horario" id="futbol-tarde">
+                                        <label class="form-check-label w-100" for="futbol-tarde">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Tarde</span>
+                                                <span class="horario-hora">16:00 - 18:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">7</span>/15 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn-inscribirse mt-3 w-100" disabled>Selecciona un horario</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Taller 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="taller-card">
+                        <div class="card-header-custom">
+                            <span class="taller-categoria">Arte</span>
+                            <h3 class="taller-titulo">Dibujo artístico</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="taller-descripcion">Aprende fundamentos de proporción, composición, luz y sombra.</p>
+                            <div class="taller-instructor mb-3">
+                                <strong>Instructor:</strong>
+                            </div>
+                            
+                            <!-- Horarios -->
+                            <div class="horarios-container">
+                                <h6 class="mb-3 text-azul-principal">Selecciona tu horario:</h6>
+                                
+                                <!-- Turno Mañana -->
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="dibujo-horario" id="dibujo-manana">
+                                        <label class="form-check-label w-100" for="dibujo-manana">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Mañana</span>
+                                                <span class="horario-hora">10:00 - 13:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">6</span>/10 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Turno Tarde -->
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="dibujo-horario" id="dibujo-tarde">
+                                        <label class="form-check-label w-100" for="dibujo-tarde">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Tarde</span>
+                                                <span class="horario-hora">15:00 - 18:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">4</span>/10 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn-inscribirse mt-3 w-100" disabled>Selecciona un horario</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Los otros 3 talleres seguirían la misma estructura -->
+                <!-- Taller 4 - Cerámica -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="taller-card">
+                        <div class="card-header-custom">
+                            <span class="taller-categoria">Arte</span>
+                            <h3 class="taller-titulo">Cerámica</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="taller-descripcion">Crea piezas únicas con tus manos usando técnicas tradicionales.</p>
+                            <div class="taller-instructor mb-3">
+                                <strong>Instructor:</strong>
+                            </div>
+                            
+                            <div class="horarios-container">
+                                <h6 class="mb-3 text-azul-principal">Selecciona tu horario:</h6>
+                                
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ceramica-horario" id="ceramica-manana">
+                                        <label class="form-check-label w-100" for="ceramica-manana">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Mañana</span>
+                                                <span class="horario-hora">9:00 - 12:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">4</span>/8 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ceramica-horario" id="ceramica-tarde">
+                                        <label class="form-check-label w-100" for="ceramica-tarde">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Tarde</span>
+                                                <span class="horario-hora">14:00 - 17:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">2</span>/8 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn-inscribirse mt-3 w-100" disabled>Selecciona un horario</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Taller 5 - Guitarra -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="taller-card">
+                        <div class="card-header-custom">
+                            <span class="taller-categoria">Música</span>
+                            <h3 class="taller-titulo">Guitarra acústica</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="taller-descripcion">Desde acordes básicos hasta tus canciones favoritas.</p>
+                            <div class="taller-instructor mb-3">
+                                <strong>Instructor:</strong>
+                            </div>
+                            
+                            <div class="horarios-container">
+                                <h6 class="mb-3 text-azul-principal">Selecciona tu horario:</h6>
+                                
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="guitarra-horario" id="guitarra-manana">
+                                        <label class="form-check-label w-100" for="guitarra-manana">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Mañana</span>
+                                                <span class="horario-hora">10:00 - 12:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">7</span>/10 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="guitarra-horario" id="guitarra-tarde">
+                                        <label class="form-check-label w-100" for="guitarra-tarde">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Tarde</span>
+                                                <span class="horario-hora">16:00 - 18:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">5</span>/10 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn-inscribirse mt-3 w-100" disabled>Selecciona un horario</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Taller 6 - Escritura -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="taller-card">
+                        <div class="card-header-custom">
+                            <span class="taller-categoria">Escritura</span>
+                            <h3 class="taller-titulo">Taller de escritura creativa</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="taller-descripcion">Desarrolla tu voz literaria y técnicas narrativas.</p>
+                            <div class="taller-instructor mb-3">
+                                <strong>Instructor:</strong>
+                            </div>
+                            
+                            <div class="horarios-container">
+                                <h6 class="mb-3 text-azul-principal">Selecciona tu horario:</h6>
+                                
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="escritura-horario" id="escritura-manana">
+                                        <label class="form-check-label w-100" for="escritura-manana">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Mañana</span>
+                                                <span class="horario-hora">9:00 - 11:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">9</span>/12 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="horario-option mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="escritura-horario" id="escritura-tarde">
+                                        <label class="form-check-label w-100" for="escritura-tarde">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span class="horario-turno">Turno Tarde</span>
+                                                <span class="horario-hora">17:00 - 19:00</span>
+                                            </div>
+                                            <div class="horario-cupos mt-1">
+                                                <small class="text-muted">📊 <span class="cupos-actual">6</span>/12 cupos disponibles</small>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn-inscribirse mt-3 w-100" disabled>Selecciona un horario</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
